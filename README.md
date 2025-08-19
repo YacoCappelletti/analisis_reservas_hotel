@@ -1,5 +1,5 @@
 
-# Análisis de Reservas de Hotel: Predicción de Cancelaciones y Optimización de Ingresos
+# Análisis de reservas de hotel: Predicción de cancelaciones y optimización de ingresos
 
 Este repositorio contiene un proyecto analítico integral centrado en el análisis de un conjunto de datos de reservas hoteleras. El objetivo principal es identificar patrones de cancelación, cuantificar su impacto financiero y desarrollar modelos predictivos que permitan mitigar pérdidas y optimizar la rentabilidad operativa.
 
@@ -7,7 +7,7 @@ El proyecto está implementado en Jupyter Notebook, utilzando un enfoque estruct
 
 
 
-## Introducción del Dataset
+## Introducción del dataset
 
 
 Los datos utilizados provienen del *Hotel Reservations Classification Dataset* disponible en Kaggle, y comprenden más de 36,000 registros de reservas realizadas entre 2017 y 2018. Cada registro incluye información detallada sobre las características de la reserva, el perfil del huésped, condiciones de estancia y el estado final de la reserva (cancelada o no cancelada).
@@ -15,7 +15,7 @@ Los datos utilizados provienen del *Hotel Reservations Classification Dataset* d
 La variable objetivo principal es **`booking_status`**, una variable binaria que indica si una reserva fue cancelada. Dado que las cancelaciones representan una fuente significativa de pérdida de ingresos, este análisis se centra en comprender sus determinantes y predecirlas con anticipación.
 
 
-## Variables Clave Analizadas
+## Variables clave analizadas
 
 
 El análisis exploratorio y predictivo se basó en un conjunto de variables estratégicas, agrupadas en las siguientes categorías:
@@ -34,31 +34,31 @@ Entre todas, las variables con mayor poder predictivo identificadas fueron:
 - **`repeated_guest`**: Historial de visitas previas.
 
 
-## Principales Hallazgos del Análisis
+## Principales hallazgos del análisis
 
 
 
-### 1. Impacto Financiero de las Cancelaciones
+### 1. Impacto financiero de las cancelaciones
 - En 2018, las cancelaciones generaron pérdidas por **$4.02 millones USD**, un aumento del **149%** respecto a 2017.
 - El **36.73%** de todas las reservas en 2018 fueron canceladas, frente al 14.75% en 2017.
 
-### 2. Patrones Estacionales Críticos
+### 2. Patrones estacionales críticos
 - Los meses de **junio a octubre** presentan tasas de cancelación superiores al 40%, con picos en agosto (46.55%) y octubre (46.36%).
 - Los **domingos** registran la tasa más alta de cancelación (37.34%), junto con el mayor volumen absoluto de reservas canceladas.
 
-### 3. Perfiles de Alto Riesgo
+### 3. Perfiles de alto riesgo
 - **Reservas anticipadas**: Cancelaciones superan el 80% cuando la reserva se realiza con más de 300 días de antelación.
 - **Grupos grandes**: Grupos de 4 personas tienen una tasa de cancelación del 43.74%.
 - **Huéspedes no recurrentes**: 33.59% de cancelación frente al 1.62% en huéspedes recurrentes.
 - **Segmento Online**: Representa el 72.4% del total de reservas y acumula el 36.51% de cancelaciones.
 
-### 4. Relación Precio-Riesgo
+### 4. Relación precio-riesgo
 - Las tarifas entre **$100 y $149** concentran el mayor volumen de cancelaciones (41.48%).
 - Las tarifas **premium (> $200)** tienen la tasa más alta (48.99%), lo que indica mayor volatilidad en el segmento de lujo.
 
 
 
-## Acciones Estratégicas Propuestas
+## Acciones estratégicas propuestas
 
 Basado en los hallazgos, se proponen las siguientes acciones para mitigar el impacto de las cancelaciones:
 
@@ -79,16 +79,16 @@ Basado en los hallazgos, se proponen las siguientes acciones para mitigar el imp
 
 
 
-## Modelos Predictivos Entrenados
+## Modelos predictivos entrenados
 
 Se implementaron y evaluaron dos modelos de clasificación supervisada para predecir la probabilidad de cancelación:
 
-1. **Árbol de Decisión**
-2. **Random Forest**
+1. **Árbol de decisión**
+2. **Random forest**
 
 Ambos modelos fueron entrenados con validación cruzada y ajuste de hiperparámetros, priorizando el **recall** en la clase minoritaria (cancelaciones) para maximizar la detección de riesgos.
 
-### Resultados Clave
+### Resultados clave
 
 | Modelo | Accuracy | Recall (Clase 1) | Precision (Clase 1) | F1-Score (Clase 1) | AUC-ROC |
 |--------|----------|------------------|----------------------|--------------------|---------|
@@ -97,7 +97,7 @@ Ambos modelos fueron entrenados con validación cruzada y ajuste de hiperparáme
 
 El modelo **Random Forest** mostró un rendimiento ligeramente superior, con una AUC-ROC de **0.87**, lo que indica una excelente capacidad de discriminación. Además, su naturaleza de ensamble garantiza mayor robustez frente al sobreajuste.
 
-### Variables Más Influyentes
+### Variables más influyentes
 Las variables más importantes en ambos modelos fueron:
 - `lead_time`
 - `avg_price_per_room`

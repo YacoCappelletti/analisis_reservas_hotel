@@ -1,7 +1,7 @@
 
 # Análisis de Reservas de Hotel: Predicción de Cancelaciones y Optimización de Ingresos
 
-Este repositorio contiene un proyecto analítico integral desarrollado como parte de un portafolio profesional en ciencia de datos. El objetivo principal es realizar un análisis exhaustivo de un conjunto de datos de reservas hoteleras, con foco en la identificación de patrones de cancelación, la cuantificación de su impacto financiero y el desarrollo de modelos predictivos para mitigar pérdidas y optimizar la rentabilidad.
+Este repositorio contiene un proyecto analítico integral centrado en el análisis de un conjunto de datos de reservas hoteleras. El objetivo principal es identificar patrones de cancelación, cuantificar su impacto financiero y desarrollar modelos predictivos que permitan mitigar pérdidas y optimizar la rentabilidad operativa.
 
 El proyecto está implementado en Jupyter Notebook, utilzando un enfoque estructurado que combina análisis exploratorio de datos (EDA), análisis de negocio, y modelado predictivo supervisado. Los hallazgos se traducen en recomendaciones estratégicas accionables para la gestión hotelera.
 

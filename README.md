@@ -36,25 +36,23 @@ Entre todas, las variables con mayor poder predictivo identificadas fueron:
 
 ## Principales hallazgos del análisis
 
+ 1. **Impacto financiero de las cancelaciones**
+   - En 2018, las cancelaciones generaron pérdidas por **$4.02 millones USD**, un aumento del **149%** respecto a 2017.
+   - El **36.73%** de todas las reservas en 2018 fueron canceladas, frente al 14.75% en 2017.
 
+ 2. **Patrones estacionales críticos**
+   - Los meses de **junio a octubre** presentan tasas de cancelación superiores al 40%, con picos en agosto (46.55%) y octubre (46.36%).
+   - Los **domingos** registran la tasa más alta de cancelación (37.34%), junto con el mayor volumen absoluto de reservas canceladas.
 
-### 1. Impacto financiero de las cancelaciones
-- En 2018, las cancelaciones generaron pérdidas por **$4.02 millones USD**, un aumento del **149%** respecto a 2017.
-- El **36.73%** de todas las reservas en 2018 fueron canceladas, frente al 14.75% en 2017.
+ 3. **Perfiles de alto riesgo**
+   - **Reservas anticipadas**: Cancelaciones superan el 80% cuando la reserva se realiza con más de 300 días de antelación.
+   - **Grupos grandes**: Grupos de 4 personas tienen una tasa de cancelación del 43.74%.
+   - **Huéspedes no recurrentes**: 33.59% de cancelación frente al 1.62% en huéspedes recurrentes.
+   - **Segmento Online**: Representa el 72.4% del total de reservas y acumula el 36.51% de cancelaciones.
 
-### 2. Patrones estacionales críticos
-- Los meses de **junio a octubre** presentan tasas de cancelación superiores al 40%, con picos en agosto (46.55%) y octubre (46.36%).
-- Los **domingos** registran la tasa más alta de cancelación (37.34%), junto con el mayor volumen absoluto de reservas canceladas.
-
-### 3. Perfiles de alto riesgo
-- **Reservas anticipadas**: Cancelaciones superan el 80% cuando la reserva se realiza con más de 300 días de antelación.
-- **Grupos grandes**: Grupos de 4 personas tienen una tasa de cancelación del 43.74%.
-- **Huéspedes no recurrentes**: 33.59% de cancelación frente al 1.62% en huéspedes recurrentes.
-- **Segmento Online**: Representa el 72.4% del total de reservas y acumula el 36.51% de cancelaciones.
-
-### 4. Relación precio-riesgo
-- Las tarifas entre **$100 y $149** concentran el mayor volumen de cancelaciones (41.48%).
-- Las tarifas **premium (> $200)** tienen la tasa más alta (48.99%), lo que indica mayor volatilidad en el segmento de lujo.
+ 4. **Relación precio-riesgo**
+   - Las tarifas entre **$100 y $149** concentran el mayor volumen de cancelaciones (41.48%).
+   - Las tarifas **premium (> $200)** tienen la tasa más alta (48.99%), lo que indica mayor volatilidad en el segmento de lujo.
 
 
 

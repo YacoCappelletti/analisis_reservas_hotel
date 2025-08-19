@@ -20,10 +20,10 @@ La variable objetivo principal es **`booking_status`**, una variable binaria que
 
 El análisis exploratorio y predictivo se basó en un conjunto de variables estratégicas, agrupadas en las siguientes categorías:
 
-- **Variables Temporales:** `lead_time` (días de antelación), `arrival_month`, `arrival_day_of_week`.
-- **Perfil del Huésped:** `repeated_guest`, `no_of_previous_cancellations`, `market_segment_type`.
-- **Características de la Reserva:** `avg_price_per_room`, `no_of_adults`, `no_of_children`, `no_of_special_requests`, `type_of_meal_plan`, `room_type_reserved`.
-- **Condiciones Operativas:** `required_car_parking_space`, `no_of_weekend_nights`, `no_of_week_nights`.
+- **Variables temporales:** `lead_time`, `arrival_month`, `arrival_day_of_week`.
+- **Perfil del huésped:** `repeated_guest`, `no_of_previous_cancellations`, `market_segment_type`.
+- **Características de la reserva:** `avg_price_per_room`, `no_of_adults`, `no_of_children`, `no_of_special_requests`, `type_of_meal_plan`, `room_type_reserved`.
+- **Condiciones operativas:** `required_car_parking_space`, `no_of_weekend_nights`, `no_of_week_nights`.
 
 Entre todas, las variables con mayor poder predictivo identificadas fueron:
 
@@ -62,19 +62,19 @@ Entre todas, las variables con mayor poder predictivo identificadas fueron:
 
 Basado en los hallazgos, se proponen las siguientes acciones para mitigar el impacto de las cancelaciones:
 
-1. **Implementación de Depósitos Escalonados**
+1. **Implementación de depósitos escalonados**
    - Aplicar depósitos no reembolsables progresivos para reservas con más de 90 días de antelación.
    - Incrementar el porcentaje de depósito para grupos grandes (4+ personas) y tarifas superiores a $100.
 
-2. **Fortalecimiento de Programas de Fidelización**
+2. **Fortalecimiento de programas de fidelización**
    - Diseñar un programa premium para convertir huéspedes ocasionales en recurrentes, aprovechando que los huéspedes recurrentes cancelan solo en un 1.62% de los casos.
    - Ofrecer incentivos condicionados tras la primera reserva para fomentar la retención.
 
-3. **Gestión Dinámica de Tarifas y Overbooking**
+3. **Gestión dinámica de tarifas y overbooking**
    - Implementar ofertas de última hora para reasignar habitaciones canceladas, especialmente en temporada alta.
    - Aplicar overbooking estratégico en fines de semana y meses críticos, aprovechando las altas tasas de cancelación.
 
-4. **Expansión del Segmento Corporativo**
+4. **Expansión del segmento corporativo**
    - Promover alianzas con empresas, dado que el segmento *Corporate* presenta una baja tasa de cancelación (10.94%).
 
 
@@ -95,7 +95,7 @@ Ambos modelos fueron entrenados con validación cruzada y ajuste de hiperparáme
 | Árbol de Decisión | 0.81 | 0.79 | 0.73 | 0.76 | 0.85 |
 | Random Forest | 0.81 | 0.79 | 0.76 | 0.77 | 0.87 |
 
-El modelo **Random Forest** mostró un rendimiento ligeramente superior, con una AUC-ROC de **0.87**, lo que indica una excelente capacidad de discriminación. Además, su naturaleza de ensamble garantiza mayor robustez frente al sobreajuste.
+El modelo **Random forest** mostró un rendimiento ligeramente superior, con una AUC-ROC de **0.87**, lo que indica una excelente capacidad de discriminación. Además, su naturaleza de ensamble garantiza mayor robustez frente al sobreajuste.
 
 ### Variables más influyentes
 Las variables más importantes en ambos modelos fueron:

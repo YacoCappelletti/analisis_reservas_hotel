@@ -1,34 +1,20 @@
-# Análisis de Reservas Hoteleras
+# Hotel Reservation Cancellation Analysis
 
-EDA project with professional statistical analysis and comprehensive reporting.
+Exploratory data analysis and predictive insights on hotel booking cancellations.
 
-## 📊 Description
+## What this project covers
 
-End-to-end data analysis pipeline: raw data → exploratory analysis → statistical testing → executive report.
+- Dataset cleaning and feature engineering for booking data
+- Distribution and trend analysis across different hotel types, seasons, and markets
+- Statistical testing to identify key cancellation drivers (lead time, deposit type, market segment)
+- Cross-analysis of no-show vs cancellation patterns
+- Actionable recommendations for revenue optimization
 
-## 🛠️ Stack
+## 🛠️ Built with
+Python 3, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, SciPy, Openpyxl.
 
-- **Python 3** + Jupyter Notebook
-- **Pandas / NumPy** — data manipulation
-- **Matplotlib / Seaborn** — professional visualizations
-- **SciPy** — statistical tests (chi-square, ANOVA, correlation)
-- **Openpyxl** — Excel file processing
-
-## 📋 Analysis Content
-
-1. **Dictionary** — Variable descriptions and mappings
-2. **Descriptive statistics** — Mean, median, std dev, percentiles
-3. **Full EDA** — Distribution, correlation and trend visualizations
-4. **Statistical tests** — Chi-square (independence), ANOVA (group differences)
-5. **Cross-analysis** — Categorical vs numerical variable intersections
-6. **Conclusions & recommendations**
-
-## 🎯 Learning Objectives
-
-- Professional EDA workflows
-- Advanced visualization with Matplotlib/Seaborn
-- Hypothesis testing for data validation
-- Executive report generation in PDF
+## 📊 Output
+A comprehensive PDF report featuring visualizations, statistical test results, and strategic conclusions about booking behavior.
 
 ---
 
